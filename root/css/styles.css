@@ -1,0 +1,127 @@
+*{
+
+    margin: 0;
+    padding: 0;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    
+        scroll-behavior: smooth;
+      
+       
+}
+
+
+
+
+
+
+/**------------------------ESTILOS DE LA NAVBAR---------------------------**/
+
+.navbar{
+    background: linear-gradient(to top, #866FE8, #4621DF);
+   
+    padding-top: 4%;
+    padding-bottom: 10%;  
+}
+
+
+
+
+
+
+
+
+/*-------------------BODY-----------------------*/
+.first-view{
+background-attachment: fixed;
+background-position: center;
+background-repeat: no-repeat;
+background-size: cover;
+
+background-image:  url(/root/assets/fondo.jpg);
+    
+}
+
+
+.imagen2{
+    position: absolute;
+    top: 25%;
+    left: 4%;
+}
+
+
+.cajasdetexto{
+
+   padding-top: 45px;
+}
+
+#botonform {
+width: 75%;
+background: #5400FF;
+border-color: #5400FF;
+color: #fff;
+} 
+#botonform:hover{
+    background: #460fb4;
+}
+#botoncheck {
+    width: 20%;
+    margin-left: 2%;
+    margin-bottom: 18px;
+    background: #FF3030;
+    border-color: #FF3030;
+    color: #fff;
+    } 
+#botoncheck:hover{
+    background: #af1b1b;
+}
+#field_sentence{
+    width: 75%;
+    display: block;
+    margin-bottom: 15px;
+    border: 1px solid #d8dee2;
+}
+.form-control{
+    border-radius: 4px;
+    width: 60%;
+    border-color: white;
+    
+}
+.rellenoxd{
+    height: 100%;
+    margin: 10%;
+}
+#formulario{
+    background: white;
+    padding: 50px;
+    padding-top: 7;
+    padding-bottom: 7%;
+    border: 1px solid #d8dee2;
+    border-top: 1px solid #d8dee2;
+    border-radius: 15px;
+    margin-bottom: 30px;
+    position: absolute;
+    right: 15%;
+    top: 28%;
+    box-shadow: 0 0 0 0.2rem rgba(0, 0, 0, 0.1);
+
+}
+
+h1 {
+    text-align: center;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    color: black;
+}
+
+.titulo{
+    text-align: center; 
+    color: white; 
+    position: absolute; 
+    left: 30%; 
+    right: 30%;
+    font-size: 250%;
+}
+
