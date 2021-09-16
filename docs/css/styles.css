@@ -113,3 +113,53 @@ h1 {
     font-size: 250%;
 }
 
+.main_headerContainer-mobile{
+    display: none;
+}
+
+@media screen and (max-width: 900px) {
+
+    .main_headerContainer-mobile{
+        display: flex;
+        justify-content: center;
+    }
+    .navbar{
+        background: linear-gradient(to top, #866FE8, #4621DF);
+        padding-top: 0px !important;
+        padding-bottom: 0px !important;  
+        padding-left: 20px !important;
+        display: none;
+    }
+
+    #field_sentence {
+        width: 100% !important;
+        display: block;
+        margin-bottom: 15px;
+        border: 1px solid #d8dee2;
+    }
+
+    #formulario {
+        padding: 25px;
+        padding-top: 7;
+        padding-bottom: 7%;
+        margin-bottom: 0px;
+         position: unset;
+        right: 0%;
+        top: 5%;
+    }
+
+    #botoncheck {
+        width: 100%;
+        margin-left: 0%;
+    }
+
+    .btn-info {
+        width: 100%;
+    }
+
+    .imagen2{
+        display: none;
+    }
+
+}
+
