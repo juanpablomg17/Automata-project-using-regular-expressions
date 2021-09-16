@@ -12,24 +12,14 @@
 }
 
 
-
-
-
-
 /**------------------------ESTILOS DE LA NAVBAR---------------------------**/
 
 .navbar{
     background: linear-gradient(to top, #866FE8, #4621DF);
-   
     padding-top: 4%;
     padding-bottom: 10%;  
+    padding-left: 5rem;
 }
-
-
-
-
-
-
 
 
 /*-------------------BODY-----------------------*/
@@ -39,17 +29,15 @@ background-position: center;
 background-repeat: no-repeat;
 background-size: cover;
 
-background-image:  url(/root/assets/fondo.jpg);
+background-image:  url("../assets/fondo.jpg");
     
 }
-
 
 .imagen2{
     position: absolute;
     top: 25%;
     left: 4%;
 }
-
 
 .cajasdetexto{
 

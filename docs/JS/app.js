@@ -179,6 +179,6 @@ form.addEventListener("submit", (e) => {
         swal ("Oops" ,"Something went wrong!","error" );
     }
     
-    document.getElementById("form_validate").reset();
+    
   
 });
