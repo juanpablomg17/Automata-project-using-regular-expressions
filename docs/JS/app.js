@@ -42,9 +42,9 @@ const complements = [
   "happy",
 ];
 const complements2 = [
-    "a good doctors",
+    "good doctors",
     "beautiful people",
-    "good students",
+    "good developers",
     "reds",
     "pinks", 
     "dangerous",
@@ -60,7 +60,8 @@ const complements2 = [
     "in my house yesterday",
     "a bad students",
     "sick yesterday",
-    "happy"
+    "happy", 
+    "angry last two weeks"
 ];
 
 
