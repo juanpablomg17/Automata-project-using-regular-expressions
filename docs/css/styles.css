@@ -16,7 +16,6 @@
 
 .navbar{
     background: linear-gradient(to top, #866FE8, #4621DF);
-    padding-top: 4%;
     padding-bottom: 10%;  
     padding-left: 5rem;
 }
@@ -76,10 +75,18 @@ color: #fff;
     border-color: white;
     
 }
-.rellenoxd{
-    height: 100%;
-    margin: 10%;
+
+#row{
+    position: absolute;
+    right: 3%;
+    top: 18%;
 }
+.card{
+    border-radius: 15px;
+    border: 1px solid rgba(0,0,0,.125);
+    box-shadow: 0 0 0 0.2rem rgb(0 0 0 / 10%);
+}
+
 #formulario{
     background: white;
     padding: 50px;
@@ -89,10 +96,8 @@ color: #fff;
     border-top: 1px solid #d8dee2;
     border-radius: 15px;
     margin-bottom: 30px;
-    position: absolute;
-    right: 15%;
-    top: 28%;
     box-shadow: 0 0 0 0.2rem rgba(0, 0, 0, 0.1);
+    height: 100%;
 
 }
 

@@ -1,7 +1,7 @@
 
 // pronouns array
 const pronouns = ["I", "He", "She", "It"]; //
-const pronouns2 = ["You", "We", "They"];
+const pronouns2 = ["We", "They", "you"];
 
 // demostrative Pronouns array
 const demostrativePronouns = ["This", "That"]; //
@@ -10,7 +10,7 @@ const demostrativePronouns2 = ["These", "Those"];
 //
 const properPronuns = ["Mauricio","Mery","Javier","Roberto","Carlitos","Oscar","Barvara",
   "Kendall","Emily","Rata","Taylor","Toro", "Dua Lipa", "Luna", "Hailee Steinfeld", "Jorge", "Robert", "Carlitos", "Wilkar", "Minion", "Wardo", "Steven", "Palvo", "JP", "Juan Pablo", "Rubius", "Michella", "Bob", "Hades", "Minerva", "Hermes", "Jupiter", "Cius", "El bicho", "Ahri", "Anivia", "Poppy", "Sara", "Raquel", "Ashe", "May", "Lana Rohades", "Alexa", "Gigi", 
-  "Cortana", "Maradona"
+  "Cortana", "Maradona", "Perro", "Gato", "Ardilla", "Juan"
 ]; //
 const commmonPronouns = ["phone", "lion", "elephant", "dog", "cat", "book", "fox", "chair", "table", "cockroach", "food", "rooster","pc", "screen", "printer", "mouse", "donkey", "key", "cow", "horse", "fish", "can", "computer", "bed", "internet", "ball", "racket", "fan"]; //
 const commmonPronouns2 = ["phones", "lions", "elephants", "dogs", "cats", "books", "foxes", "chairs", "tables", "cockroaches", "foods", "roosters","pcs", "screens", "printers", "mouses", "donkeys", "keys", "cows", "horses", "fishes", "cans", "computers", "beds", "internets", "balls", "rackets", "fans", "games", "lol", "animals"]; //
@@ -19,49 +19,38 @@ const article2 = ["The"]; //
 const verbsToBePast = ["Was", "Were"];
 
 // complements in singular
-const complements = [
-  "a good software engineer",
-  "beautiful",
-  "a soccer player",
-  "a good stundet",
-  "red",
-  "pink", 
-  "dangerous",
-  "smart person",
-  "in london last year",
-  "in colombia last month",
-  "in your house lastnight",
-  "in the university las year",
-  "in the jungle",
-  "in the medow",
+const complements = ["a good software engineer","beautiful","a gamer",
+  "a good stundet","red","pink", "dangerous","smart person",
+  "in london last year","in colombia last month",
+  "in your house lastnight", "in the university last year",
+  "in the jungle", "in the medow",
   "in the zoo",
-  "in England last three months",
+  "in Dance School last three months",
   "in my house yesterday",
-  "a bad student",
-  "sick yesterday",
-  "happy",
+  "a bad son",
+  "drunk yesterday",
+  "sad",
+  "a good developer",
+"in the zoo last week",
+"angry the last two weeks", 
 ];
+
 const complements2 = [
-    "good doctors",
-    "beautiful people",
-    "good developers",
-    "reds",
-    "pinks", 
-    "dangerous",
-    "smart people",
-    "in london last year",
-    "in colombia last month",
-    "in your house lastnight",
-    "in the university las year",
-    "in the jungle",
-    "in the medow",
-    "in the zoo",
-    "in England last three months",
-    "in my house yesterday",
-    "a bad students",
-    "sick yesterday",
-    "happy", 
-    "angry last two weeks"
+  "good software engineers","beautiful","gamers",
+  "good stundets","reds","pinks", "dangerous","smart people",
+  "in london last year","in colombia last month",
+  "in your house lastnight", "in the university last year",
+  "in the jungle", "in the medow",
+  "in the zoo",
+  "in Dance School three months",
+  "in my house yesterday",
+  "bad sons",
+  "drunk yesterday",
+  "sad",
+"good developers",
+"in the zoo last week",
+"angry the last two weeks",
+  
 ];
 
 
@@ -156,7 +145,16 @@ var regularExpresion = () => {
       expresion += "|" + complements2[i];
     }
   }
-  expresion += "))$";
+  expresion += ")|((you) (were) ("
+  for (let i = 0; i < complements.length; i++) {
+    if (i == 0) {
+      expresion += complements[i];
+    } else {
+      expresion += "|" + complements[i];
+    }
+  }
+
+  expresion += ")))$";
 
   return expresion;
 };
@@ -168,6 +166,7 @@ form.addEventListener("submit", (e) => {
     e.preventDefault();
 
     var expresionToValidate = regularExpresion();
+    console.log(expresionToValidate);
     var regularExp= new RegExp(expresionToValidate,"i");
 
     var field_sentence = document.getElementById("field_sentence").value;
